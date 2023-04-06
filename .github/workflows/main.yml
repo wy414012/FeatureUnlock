@@ -22,10 +22,10 @@ jobs:
         with:
           repository: wy414012/MacKernelSDK
           path: MacKernelSDK
-      - name: CI Bootstrap
+      - name: CI 引导
         run: |
           src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/wy414012/ocbuild/Yaming/ci-bootstrap.sh) && eval "$src" || exit 1
-      - name: Lilu Bootstrap
+      - name: Lilu 依赖引导
         run: |
           src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/wy414012/Lilu/yaming-network/Lilu/Scripts/bootstrap.sh) && eval "$src" || exit 1
 
